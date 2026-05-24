@@ -1,6 +1,6 @@
 "use client";
 
-import { mockCompanies } from "@/lib/mock/companies";
+import { useDashboard } from "@/context/dashboard-context";
 import { useTranslations } from "next-intl";
 import { useEffect, useMemo, useRef, useState } from "react";
 
@@ -11,23 +11,24 @@ type CompanySearchSelectProps = {
 
 export function CompanySearchSelect({ value, onChange }: CompanySearchSelectProps) {
   const t = useTranslations("DashboardToolbar");
+  const { companies } = useDashboard();
   const [open, setOpen] = useState(false);
   const [query, setQuery] = useState("");
   const containerRef = useRef<HTMLDivElement>(null);
 
   const selectedCompany =
-    mockCompanies.find((company) => company.id === value) ?? mockCompanies[0];
+    companies.find((company) => company.id === value) ?? companies[0];
 
   const filteredCompanies = useMemo(() => {
     const normalized = query.trim().toLowerCase();
     if (!normalized) {
-      return mockCompanies;
+      return companies;
     }
 
-    return mockCompanies.filter((company) =>
+    return companies.filter((company) =>
       company.name.toLowerCase().includes(normalized),
     );
-  }, [query]);
+  }, [companies, query]);
 
   useEffect(() => {
     if (!open) {
@@ -46,6 +47,10 @@ export function CompanySearchSelect({ value, onChange }: CompanySearchSelectProp
     document.addEventListener("mousedown", handlePointerDown);
     return () => document.removeEventListener("mousedown", handlePointerDown);
   }, [open]);
+
+  if (!selectedCompany) {
+    return null;
+  }
 
   return (
     <div ref={containerRef} className="relative">

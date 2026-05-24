@@ -4,10 +4,9 @@ import { Badge, type BadgeVariant } from "@/components/custom/badge/badge";
 import { CategoryBadge } from "@/components/custom/badge/category-badge";
 import { Card } from "@/components/custom/card/card";
 import { DataTable, type TableColumn, type TableFilter } from "@/components/custom/table/table";
-import { useDashboard } from "@/context/dashboard-context";
+import { useDashboard, useDashboardDataset } from "@/context/dashboard-context";
 import { useFormatCurrency } from "@/hooks/use-format-currency";
 import { expenseCategoryKeys } from "@/lib/mock/expense-categories";
-import { monthKeys } from "@/lib/mock/companies";
 import type { Transaction, TransactionStatus } from "@/lib/mock/transactions";
 import { useFormatter, useTranslations } from "next-intl";
 import { useMemo } from "react";
@@ -22,7 +21,8 @@ export function RecentTransactions() {
   const t = useTranslations("DashboardTransactions");
   const formatMoney = useFormatCurrency();
   const format = useFormatter();
-  const { dataset } = useDashboard();
+  const { monthKeys } = useDashboard();
+  const dataset = useDashboardDataset();
 
   const dateBounds = useMemo(() => {
     const dates = dataset.transactions.map((transaction) => transaction.date).sort();

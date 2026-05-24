@@ -6,7 +6,7 @@ import { GranularityToggle } from "@/components/custom/chart/granularity-toggle"
 import { RevenueBarChart } from "@/components/custom/chart/revenue-bar-chart";
 import { StickyYAxis } from "@/components/custom/chart/sticky-y-axis";
 import { MonthPicker } from "@/components/custom/month-picker/month-picker";
-import { useDashboard } from "@/context/dashboard-context";
+import { useDashboard, useDashboardDataset } from "@/context/dashboard-context";
 import { useHiddenKeys } from "@/hooks/use-hidden-keys";
 import { useMediaQuery } from "@/hooks/use-media-query";
 import {
@@ -32,7 +32,8 @@ import { useMemo, useState } from "react";
 export function RevenueOverviewChart() {
   const t = useTranslations("DashboardCharts");
   const format = useFormatter();
-  const { dataset, monthKey, setMonthKey, companyId } = useDashboard();
+  const { monthKey, setMonthKey, companyId, monthKeys } = useDashboard();
+  const dataset = useDashboardDataset();
   const [granularity, setGranularity] = useState<ChartGranularity>("month");
   const { hiddenKeys, toggle: toggleSeries } = useHiddenKeys(
     `${companyId}-${monthKey}-${granularity}`,
@@ -72,7 +73,13 @@ export function RevenueOverviewChart() {
     <Card
       title={t("revenueOverviewTitle")}
       description={t("revenueOverviewDescription", { company: companyName })}
-      action={<MonthPicker value={monthKey} onChange={setMonthKey} />}
+      action={
+        <MonthPicker
+          value={monthKey}
+          onChange={setMonthKey}
+          allowedMonthKeys={monthKeys}
+        />
+      }
     >
       <GranularityToggle value={granularity} onChange={setGranularity} />
 

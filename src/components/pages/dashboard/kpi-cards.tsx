@@ -1,7 +1,7 @@
 "use client";
 
 import { Card } from "@/components/custom/card/card";
-import { useDashboard } from "@/context/dashboard-context";
+import { useDashboard, useDashboardDataset } from "@/context/dashboard-context";
 import { useFormatCurrency } from "@/hooks/use-format-currency";
 import { formatPercent } from "@/lib/format/currency";
 import type { KpiMetricKey } from "@/lib/mock/dashboard-kpi";
@@ -27,7 +27,8 @@ export function KpiCards() {
   const t = useTranslations("DashboardKpi");
   const locale = useLocale();
   const formatMoney = useFormatCurrency();
-  const { dataset, monthKey } = useDashboard();
+  const { monthKey } = useDashboard();
+  const dataset = useDashboardDataset();
 
   const { currentSnapshot, previousSnapshot } = useMemo(() => {
     const monthIndex = dataset.kpiSnapshots.findIndex(

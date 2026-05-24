@@ -14,9 +14,11 @@ const monthIndices = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11] as const;
 type MonthPickerProps = {
   value: MonthKey;
   onChange: (monthKey: MonthKey) => void;
+  /** When set (e.g. free plan), only these months are selectable. */
+  allowedMonthKeys?: readonly MonthKey[];
 };
 
-export function MonthPicker({ value, onChange }: MonthPickerProps) {
+export function MonthPicker({ value, onChange, allowedMonthKeys }: MonthPickerProps) {
   const format = useFormatter();
   const [open, setOpen] = useState(false);
   const [yearOpen, setYearOpen] = useState(false);
@@ -139,7 +141,13 @@ export function MonthPicker({ value, onChange }: MonthPickerProps) {
           <div className="grid grid-cols-3 gap-2">
             {monthIndices.map((monthIndex) => {
               const monthKeyForCell = toMonthKey(viewYear, monthIndex);
-              const isAvailable = isMonthKeyAvailable(viewYear, monthIndex);
+              const monthKeyForAvailability = toMonthKey(viewYear, monthIndex);
+              const isAvailable = allowedMonthKeys
+                ? Boolean(
+                    monthKeyForAvailability &&
+                      allowedMonthKeys.includes(monthKeyForAvailability),
+                  )
+                : isMonthKeyAvailable(viewYear, monthIndex);
               const isSelected =
                 isAvailable && monthKeyForCell === value && viewYear === selectedYear;
 

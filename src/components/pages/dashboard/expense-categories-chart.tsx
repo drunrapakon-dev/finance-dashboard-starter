@@ -3,7 +3,7 @@
 import { Card } from "@/components/custom/card/card";
 import { ChartLegendToggle } from "@/components/custom/chart/chart-legend-toggle";
 import { MonthPicker } from "@/components/custom/month-picker/month-picker";
-import { useDashboard } from "@/context/dashboard-context";
+import { useDashboard, useDashboardDataset } from "@/context/dashboard-context";
 import { useSettings } from "@/context/settings-context";
 import { useHiddenKeys } from "@/hooks/use-hidden-keys";
 import { CHART_TOOLTIP_STYLE } from "@/lib/chart/constants";
@@ -17,7 +17,8 @@ import { Cell, Pie, PieChart, ResponsiveContainer, Tooltip } from "recharts";
 export function ExpenseCategoriesChart() {
   const t = useTranslations("DashboardCharts");
   const format = useFormatter();
-  const { dataset, monthKey, setMonthKey, companyId } = useDashboard();
+  const { monthKey, setMonthKey, companyId, monthKeys } = useDashboard();
+  const dataset = useDashboardDataset();
   const { currency } = useSettings();
   const { hiddenKeys, toggle: toggleCategory } = useHiddenKeys(
     `${companyId}-${monthKey}`,
@@ -63,7 +64,13 @@ export function ExpenseCategoriesChart() {
         company: companyName,
         month: monthLabel,
       })}
-      action={<MonthPicker value={monthKey} onChange={setMonthKey} />}
+      action={
+        <MonthPicker
+          value={monthKey}
+          onChange={setMonthKey}
+          allowedMonthKeys={monthKeys}
+        />
+      }
     >
       <div className="mt-2 h-72 w-full min-w-0">
         <ResponsiveContainer width="100%" height="100%">

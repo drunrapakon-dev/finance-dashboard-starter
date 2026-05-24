@@ -4,7 +4,7 @@ import { Card } from "@/components/custom/card/card";
 import { GranularityToggle } from "@/components/custom/chart/granularity-toggle";
 import { ScrollableChartShell } from "@/components/custom/chart/scrollable-chart-shell";
 import { MonthPicker } from "@/components/custom/month-picker/month-picker";
-import { useDashboard } from "@/context/dashboard-context";
+import { useDashboard, useDashboardDataset } from "@/context/dashboard-context";
 import { useSettings } from "@/context/settings-context";
 import { useMediaQuery } from "@/hooks/use-media-query";
 import { buildYAxisTicks, niceAxisMax, peakRevenueValue } from "@/lib/chart/axis";
@@ -53,7 +53,8 @@ export function SpendingTrendChart() {
   const t = useTranslations("AnalyticsPage");
   const tCharts = useTranslations("DashboardCharts");
   const format = useFormatter();
-  const { dataset, monthKey, setMonthKey, companyId } = useDashboard();
+  const { monthKey, setMonthKey, companyId, monthKeys } = useDashboard();
+  const dataset = useDashboardDataset();
   const { currency } = useSettings();
   const [granularity, setGranularity] = useState<ChartGranularity>("year");
   const isNarrowViewport = useMediaQuery(CHART_NARROW_MEDIA_QUERY);
@@ -83,7 +84,13 @@ export function SpendingTrendChart() {
     <Card
       title={t("spendingTrendTitle")}
       description={t("spendingTrendDescription", { company: companyName })}
-      action={<MonthPicker value={monthKey} onChange={setMonthKey} />}
+      action={
+        <MonthPicker
+          value={monthKey}
+          onChange={setMonthKey}
+          allowedMonthKeys={monthKeys}
+        />
+      }
     >
       <GranularityToggle value={granularity} onChange={setGranularity} />
 

@@ -1,6 +1,8 @@
 "use client";
 
 import { ShellPageLayout } from "@/components/layout/shell-page-layout";
+import { DashboardDataGate } from "@/components/pages/dashboard/dashboard-data-gate";
+import { TransactionsPageSkeleton } from "@/components/pages/dashboard/dashboard-skeletons";
 import { DashboardToolbar } from "@/components/pages/dashboard/dashboard-toolbar";
 import { RecentTransactions } from "@/components/pages/dashboard/recent-transactions";
 import { useTranslations } from "next-intl";
@@ -14,7 +16,9 @@ export function TransactionsPageContent() {
       description={t("description")}
       toolbar={<DashboardToolbar />}
     >
-      <RecentTransactions />
+      <DashboardDataGate skeleton={<TransactionsPageSkeleton />}>
+        <RecentTransactions />
+      </DashboardDataGate>
     </ShellPageLayout>
   );
 }
