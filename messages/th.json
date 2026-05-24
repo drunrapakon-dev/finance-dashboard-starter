@@ -1,0 +1,248 @@
+{
+  "SignInPage": {
+    "brand": "แดชบอร์ดการเงิน",
+    "title": "เข้าสู่ระบบบัญชีของคุณ",
+    "description": "ใช้บัญชีทดลองด้านล่างเพื่อสำรวจแดชบอร์ด",
+    "noAccount": "ยังไม่มีบัญชี?",
+    "signUpLink": "สมัครสมาชิก"
+  },
+  "SignInForm": {
+    "email": "อีเมล",
+    "password": "รหัสผ่าน",
+    "submit": "เข้าสู่ระบบ",
+    "demoHint": "ข้อมูลทดลองถูกกรอกไว้ล่วงหน้าแล้ว เพื่อให้ทดลองใช้งานได้ทันทีหลัง clone",
+    "invalidCredentials": "อีเมลหรือรหัสผ่านไม่ถูกต้อง"
+  },
+  "SignUpPage": {
+    "brand": "แดชบอร์ดการเงิน",
+    "title": "สร้างบัญชีของคุณ",
+    "description": "สมัครสมาชิกเพื่อเริ่มใช้งานแดชบอร์ดการเงิน",
+    "hasAccount": "มีบัญชีอยู่แล้ว?",
+    "signInLink": "เข้าสู่ระบบ"
+  },
+  "SignUpForm": {
+    "name": "ชื่อ-นามสกุล",
+    "email": "อีเมล",
+    "password": "รหัสผ่าน",
+    "submit": "สมัครสมาชิก"
+  },
+  "DashboardPage": {
+    "title": "แดชบอร์ด",
+    "description": "ภาพรวมการเงินของบริษัท",
+    "welcome": "ยินดีต้อนรับกลับ, Super Admin"
+  },
+  "TransactionsPage": {
+    "title": "ธุรกรรม",
+    "description": "ค้นหา กรอง และดูธุรกรรมทั้งหมด"
+  },
+  "AnalyticsPage": {
+    "title": "การวิเคราะห์",
+    "description": "ตัวชี้วัดและกราฟรายรับ–รายจ่าย",
+    "spendingTrendTitle": "แนวโน้มรายรับ–รายจ่าย",
+    "spendingTrendDescription": "แนวโน้มรายรับและรายจ่ายรายเดือนของ {company}"
+  },
+  "CategoriesPage": {
+    "title": "หมวดหมู่",
+    "description": "สัดส่วนรายจ่ายของ {month}",
+    "share": "{value}% ของยอดรวม"
+  },
+  "ReportsPage": {
+    "title": "รายงาน",
+    "description": "ดาวน์โหลดและส่งออกรายงานการเงิน",
+    "comingSoon": "เร็วๆ นี้",
+    "items": {
+      "monthlySummary": {
+        "title": "สรุปรายเดือน",
+        "description": "ภาพรวมรายรับและรายจ่ายแบบ PDF"
+      },
+      "cashflow": {
+        "title": "รายงานกระแสเงินสด",
+        "description": "ติดตามเงินเข้า–ออกตามช่วงเวลา"
+      },
+      "taxExport": {
+        "title": "ส่งออกภาษี",
+        "description": "ส่งออกข้อมูลแยกหมวดสำหรับบัญชี"
+      }
+    }
+  },
+  "SettingsPage": {
+    "title": "ตั้งค่า",
+    "description": "จัดการโปรไฟล์ การตั้งค่า และบัญชี",
+    "profileTitle": "โปรไฟล์",
+    "profileDescription": "แก้ไขข้อมูลส่วนตัวและบริษัท",
+    "fullName": "ชื่อ-นามสกุล",
+    "email": "อีเมล",
+    "companyName": "ชื่อบริษัท",
+    "currencyTitle": "สกุลเงิน",
+    "currencyDescription": "เลือกรูปแบบการแสดงจำนวนเงินทั้งแดชบอร์ด",
+    "formatPreview": "ตัวอย่างรูปแบบตัวเลข",
+    "currencies": {
+      "usd": "USD ($)",
+      "thb": "THB (฿)",
+      "eur": "EUR (€)",
+      "gbp": "GBP (£)"
+    },
+    "notificationsTitle": "การแจ้งเตือน",
+    "notificationsDescription": "เลือกการแจ้งเตือนที่ต้องการรับ",
+    "notifications": {
+      "monthlySummary": "สรุปรายเดือน",
+      "monthlySummaryHint": "รับภาพรวมรายรับ–รายจ่ายทุกเดือน",
+      "weeklyReports": "รายงานรายสัปดาห์",
+      "weeklyReportsHint": "รับสรุปการเงินทุกสัปดาห์",
+      "expenseAlerts": "แจ้งเตือนรายจ่าย",
+      "expenseAlertsHint": "แจ้งเมื่อรายจ่ายเกินเกณฑ์ที่กำหนด"
+    },
+    "appearanceTitle": "การแสดงผล",
+    "appearanceDescription": "ภาษาและธีม",
+    "themeLight": "เปลี่ยนเป็นโหมดสว่าง",
+    "themeDark": "เปลี่ยนเป็นโหมดมืด",
+    "accountTitle": "บัญชี",
+    "accountDescription": "ออกจากระบบ"
+  },
+  "DashboardToolbar": {
+    "company": "บริษัท",
+    "month": "เดือน",
+    "searchCompany": "ค้นหาบริษัท...",
+    "noCompanyFound": "ไม่พบบริษัท"
+  },
+  "SidebarSettings": {
+    "openMenu": "เปิดเมนูตั้งค่า",
+    "changeLanguage": "เปลี่ยนภาษา",
+    "changeTheme": "เปลี่ยนธีม",
+    "signOut": "ออกจากระบบ"
+  },
+  "DashboardKpi": {
+    "totalBalance": "ยอดคงเหลือรวม",
+    "income": "รายรับ",
+    "expenses": "รายจ่าย",
+    "cashflow": "กระแสเงินสด",
+    "vsLastMonth": "{value} เทียบเดือนที่แล้ว"
+  },
+  "DashboardCharts": {
+    "revenueOverviewTitle": "ภาพรวมรายรับ",
+    "revenueOverviewDescription": "รายรับและรายจ่ายของ {company}",
+    "expenseCategoriesTitle": "หมวดหมู่รายจ่าย",
+    "expenseCategoriesDescription": "สัดส่วนการใช้จ่ายของ {company} ใน {month}",
+    "income": "รายรับ",
+    "expenses": "รายจ่าย",
+    "granularity": {
+      "year": "รายปี",
+      "month": "รายเดือน",
+      "week": "รายสัปดาห์",
+      "day": "รายวัน"
+    },
+    "categories": {
+      "sales_revenue": "รายรับจากการขาย",
+      "service_revenue": "รายรับจากบริการ",
+      "other_income": "รายรับอื่น",
+      "payroll": "เงินเดือนและค่าจ้าง",
+      "employee_benefits": "สวัสดิการพนักงาน",
+      "contractors": "ผู้รับเหมา/ฟรีแลนซ์",
+      "software_subscriptions": "ค่าสมัครซอฟต์แวร์",
+      "cloud_hosting": "ค่าโฮสติ้ง/คลาวด์",
+      "hardware_equipment": "ฮาร์ดแวร์และอุปกรณ์",
+      "telecommunications": "โทรคมนาคม",
+      "rent_lease": "ค่าเช่า",
+      "utilities": "สาธารณูปโภค",
+      "office_supplies": "เครื่องเขียนและอุปกรณ์สำนักงาน",
+      "facilities_maintenance": "บำรุงรักษาสถานที่",
+      "advertising": "โฆษณา",
+      "marketing_events": "กิจกรรมการตลาด",
+      "sales_commissions": "ค่าคอมมิชชั่นขาย",
+      "legal_fees": "ค่าทนายความ",
+      "accounting_audit": "บัญชีและตรวจสอบบัญชี",
+      "consulting": "ที่ปรึกษา",
+      "travel": "ค่าเดินทาง",
+      "meals_entertainment": "อาหารและรับรอง",
+      "shipping_freight": "ขนส่งและขนส่งสินค้า",
+      "bank_fees": "ค่าธรรมเนียมธนาคาร",
+      "insurance": "ประกันภัย",
+      "taxes_licenses": "ภาษีและใบอนุญาต",
+      "depreciation": "ค่าเสื่อมราคา",
+      "interest_expense": "ดอกเบี้ยจ่าย"
+    }
+  },
+  "DashboardTransactions": {
+    "title": "ธุรกรรมล่าสุด",
+    "description": "ค้นหา กรอง และดูรายการล่าสุดของคุณ",
+    "searchPlaceholder": "ค้นหาจากรายละเอียดหรือหมวดหมู่...",
+    "empty": "ไม่พบธุรกรรมที่ตรงกับตัวกรอง",
+    "columns": {
+      "date": "วันที่",
+      "description": "รายละเอียด",
+      "category": "หมวดหมู่",
+      "amount": "จำนวนเงิน",
+      "status": "สถานะ"
+    },
+    "categories": {
+      "sales_revenue": "รายรับจากการขาย",
+      "service_revenue": "รายรับจากบริการ",
+      "other_income": "รายรับอื่น",
+      "payroll": "เงินเดือนและค่าจ้าง",
+      "employee_benefits": "สวัสดิการพนักงาน",
+      "contractors": "ผู้รับเหมา/ฟรีแลนซ์",
+      "software_subscriptions": "ค่าสมัครซอฟต์แวร์",
+      "cloud_hosting": "ค่าโฮสติ้ง/คลาวด์",
+      "hardware_equipment": "ฮาร์ดแวร์และอุปกรณ์",
+      "telecommunications": "โทรคมนาคม",
+      "rent_lease": "ค่าเช่า",
+      "utilities": "สาธารณูปโภค",
+      "office_supplies": "เครื่องเขียนและอุปกรณ์สำนักงาน",
+      "facilities_maintenance": "บำรุงรักษาสถานที่",
+      "advertising": "โฆษณา",
+      "marketing_events": "กิจกรรมการตลาด",
+      "sales_commissions": "ค่าคอมมิชชั่นขาย",
+      "legal_fees": "ค่าทนายความ",
+      "accounting_audit": "บัญชีและตรวจสอบบัญชี",
+      "consulting": "ที่ปรึกษา",
+      "travel": "ค่าเดินทาง",
+      "meals_entertainment": "อาหารและรับรอง",
+      "shipping_freight": "ขนส่งและขนส่งสินค้า",
+      "bank_fees": "ค่าธรรมเนียมธนาคาร",
+      "insurance": "ประกันภัย",
+      "taxes_licenses": "ภาษีและใบอนุญาต",
+      "depreciation": "ค่าเสื่อมราคา",
+      "interest_expense": "ดอกเบี้ยจ่าย"
+    },
+    "status": {
+      "completed": "สำเร็จ",
+      "pending": "รอดำเนินการ",
+      "failed": "ล้มเหลว"
+    },
+    "filters": {
+      "category": "หมวดหมู่",
+      "status": "สถานะ",
+      "all": "ทั้งหมด"
+    },
+    "dateRange": {
+      "from": "ตั้งแต่วันที่",
+      "to": "ถึงวันที่"
+    },
+    "pagination": {
+      "previous": "ก่อนหน้า",
+      "next": "ถัดไป",
+      "page": "หน้า {current} จาก {total}"
+    }
+  },
+  "Sidebar": {
+    "brand": "การเงิน",
+    "subtitle": "แดชบอร์ด",
+    "dashboard": "แดชบอร์ด",
+    "transactions": "ธุรกรรม",
+    "analytics": "การวิเคราะห์",
+    "categories": "หมวดหมู่",
+    "reports": "รายงาน",
+    "settings": "ตั้งค่า",
+    "openMenu": "เปิดเมนู",
+    "closeMenu": "ปิดเมนู"
+  },
+  "LocaleSwitcher": {
+    "label": "ภาษา",
+    "toggleLabel": "สลับภาษา",
+    "english": "English",
+    "thai": "ไทย"
+  },
+  "ThemeToggle": {
+    "label": "สลับธีม"
+  }
+}

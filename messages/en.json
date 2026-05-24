@@ -1,0 +1,248 @@
+{
+  "SignInPage": {
+    "brand": "Finance Dashboard",
+    "title": "Sign in to your account",
+    "description": "Use the demo account below to explore the dashboard.",
+    "noAccount": "Don't have an account?",
+    "signUpLink": "Sign up"
+  },
+  "SignInForm": {
+    "email": "Email",
+    "password": "Password",
+    "submit": "Sign in",
+    "demoHint": "Demo credentials are pre-filled for quick access after cloning.",
+    "invalidCredentials": "Invalid email or password."
+  },
+  "SignUpPage": {
+    "brand": "Finance Dashboard",
+    "title": "Create your account",
+    "description": "Sign up to start using the finance dashboard.",
+    "hasAccount": "Already have an account?",
+    "signInLink": "Sign in"
+  },
+  "SignUpForm": {
+    "name": "Full name",
+    "email": "Email",
+    "password": "Password",
+    "submit": "Sign up"
+  },
+  "DashboardPage": {
+    "title": "Dashboard",
+    "description": "Overview of your company finances.",
+    "welcome": "Welcome back, Super Admin."
+  },
+  "TransactionsPage": {
+    "title": "Transactions",
+    "description": "Search, filter, and review all transactions."
+  },
+  "AnalyticsPage": {
+    "title": "Analytics",
+    "description": "KPIs and charts for income and expenses.",
+    "spendingTrendTitle": "Income & Spending Trend",
+    "spendingTrendDescription": "Monthly income and expense trends for {company}"
+  },
+  "CategoriesPage": {
+    "title": "Categories",
+    "description": "Expense breakdown for {month}.",
+    "share": "{value}% of total"
+  },
+  "ReportsPage": {
+    "title": "Reports",
+    "description": "Download and export financial reports.",
+    "comingSoon": "Coming soon",
+    "items": {
+      "monthlySummary": {
+        "title": "Monthly summary",
+        "description": "PDF overview of income and expenses."
+      },
+      "cashflow": {
+        "title": "Cashflow report",
+        "description": "Track inflows and outflows over time."
+      },
+      "taxExport": {
+        "title": "Tax export",
+        "description": "Export categorized data for accounting."
+      }
+    }
+  },
+  "SettingsPage": {
+    "title": "Settings",
+    "description": "Manage your profile, preferences, and account.",
+    "profileTitle": "Profile",
+    "profileDescription": "Update your personal and company details.",
+    "fullName": "Full Name",
+    "email": "Email",
+    "companyName": "Company Name",
+    "currencyTitle": "Currency",
+    "currencyDescription": "Choose how amounts are displayed across the dashboard.",
+    "formatPreview": "Number formatting preview",
+    "currencies": {
+      "usd": "USD ($)",
+      "thb": "THB (฿)",
+      "eur": "EUR (€)",
+      "gbp": "GBP (£)"
+    },
+    "notificationsTitle": "Notification preferences",
+    "notificationsDescription": "Choose which updates you want to receive.",
+    "notifications": {
+      "monthlySummary": "Monthly summary",
+      "monthlySummaryHint": "Receive a monthly overview of income and expenses.",
+      "weeklyReports": "Weekly reports",
+      "weeklyReportsHint": "Get a weekly snapshot of your finances.",
+      "expenseAlerts": "Expense alerts",
+      "expenseAlertsHint": "Notify when spending exceeds your threshold."
+    },
+    "appearanceTitle": "Appearance",
+    "appearanceDescription": "Language and display preferences.",
+    "themeLight": "Switch to light mode",
+    "themeDark": "Switch to dark mode",
+    "accountTitle": "Account",
+    "accountDescription": "Sign out of your session."
+  },
+  "DashboardToolbar": {
+    "company": "Company",
+    "month": "Month",
+    "searchCompany": "Search company...",
+    "noCompanyFound": "No company found"
+  },
+  "SidebarSettings": {
+    "openMenu": "Open settings menu",
+    "changeLanguage": "Change language",
+    "changeTheme": "Change theme",
+    "signOut": "Sign out"
+  },
+  "DashboardKpi": {
+    "totalBalance": "Total Balance",
+    "income": "Income",
+    "expenses": "Expenses",
+    "cashflow": "Cashflow",
+    "vsLastMonth": "{value} vs last month"
+  },
+  "DashboardCharts": {
+    "revenueOverviewTitle": "Revenue Overview",
+    "revenueOverviewDescription": "Income and expenses for {company}",
+    "expenseCategoriesTitle": "Expense Categories",
+    "expenseCategoriesDescription": "Spending breakdown for {company} in {month}",
+    "income": "Income",
+    "expenses": "Expenses",
+    "granularity": {
+      "year": "Yearly",
+      "month": "Monthly",
+      "week": "Weekly",
+      "day": "Daily"
+    },
+    "categories": {
+      "sales_revenue": "Sales Revenue",
+      "service_revenue": "Service Revenue",
+      "other_income": "Other Income",
+      "payroll": "Payroll & Wages",
+      "employee_benefits": "Employee Benefits",
+      "contractors": "Contractors & Freelancers",
+      "software_subscriptions": "Software Subscriptions",
+      "cloud_hosting": "Cloud Hosting",
+      "hardware_equipment": "Hardware & Equipment",
+      "telecommunications": "Telecommunications",
+      "rent_lease": "Rent & Lease",
+      "utilities": "Utilities",
+      "office_supplies": "Office Supplies",
+      "facilities_maintenance": "Facilities Maintenance",
+      "advertising": "Advertising",
+      "marketing_events": "Marketing Events",
+      "sales_commissions": "Sales Commissions",
+      "legal_fees": "Legal Fees",
+      "accounting_audit": "Accounting & Audit",
+      "consulting": "Consulting",
+      "travel": "Travel",
+      "meals_entertainment": "Meals & Entertainment",
+      "shipping_freight": "Shipping & Freight",
+      "bank_fees": "Bank Fees",
+      "insurance": "Insurance",
+      "taxes_licenses": "Taxes & Licenses",
+      "depreciation": "Depreciation",
+      "interest_expense": "Interest Expense"
+    }
+  },
+  "DashboardTransactions": {
+    "title": "Recent Transactions",
+    "description": "Search, filter, and browse your latest activity",
+    "searchPlaceholder": "Search by description or category...",
+    "empty": "No transactions match your filters.",
+    "columns": {
+      "date": "Date",
+      "description": "Description",
+      "category": "Category",
+      "amount": "Amount",
+      "status": "Status"
+    },
+    "categories": {
+      "sales_revenue": "Sales Revenue",
+      "service_revenue": "Service Revenue",
+      "other_income": "Other Income",
+      "payroll": "Payroll & Wages",
+      "employee_benefits": "Employee Benefits",
+      "contractors": "Contractors & Freelancers",
+      "software_subscriptions": "Software Subscriptions",
+      "cloud_hosting": "Cloud Hosting",
+      "hardware_equipment": "Hardware & Equipment",
+      "telecommunications": "Telecommunications",
+      "rent_lease": "Rent & Lease",
+      "utilities": "Utilities",
+      "office_supplies": "Office Supplies",
+      "facilities_maintenance": "Facilities Maintenance",
+      "advertising": "Advertising",
+      "marketing_events": "Marketing Events",
+      "sales_commissions": "Sales Commissions",
+      "legal_fees": "Legal Fees",
+      "accounting_audit": "Accounting & Audit",
+      "consulting": "Consulting",
+      "travel": "Travel",
+      "meals_entertainment": "Meals & Entertainment",
+      "shipping_freight": "Shipping & Freight",
+      "bank_fees": "Bank Fees",
+      "insurance": "Insurance",
+      "taxes_licenses": "Taxes & Licenses",
+      "depreciation": "Depreciation",
+      "interest_expense": "Interest Expense"
+    },
+    "status": {
+      "completed": "Completed",
+      "pending": "Pending",
+      "failed": "Failed"
+    },
+    "filters": {
+      "category": "Category",
+      "status": "Status",
+      "all": "All"
+    },
+    "dateRange": {
+      "from": "From date",
+      "to": "To date"
+    },
+    "pagination": {
+      "previous": "Previous",
+      "next": "Next",
+      "page": "Page {current} of {total}"
+    }
+  },
+  "Sidebar": {
+    "brand": "Finance",
+    "subtitle": "Dashboard",
+    "dashboard": "Dashboard",
+    "transactions": "Transactions",
+    "analytics": "Analytics",
+    "categories": "Categories",
+    "reports": "Reports",
+    "settings": "Settings",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+  "LocaleSwitcher": {
+    "label": "Language",
+    "toggleLabel": "Toggle language",
+    "english": "English",
+    "thai": "Thai"
+  },
+  "ThemeToggle": {
+    "label": "Toggle theme"
+  }
+}
